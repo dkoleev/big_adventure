@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: LogicScriptableObjects
+  m_EditorClassIdentifier: 
+  m_GroupName: LogicScriptableObjects
+  m_Data:
+    m_SerializedData: []
+  m_GUID: 27eec17023a120748af7e32a51bc9104
+  m_SerializeEntries:
+  - m_GUID: 0011e0b7448595b489dc63b31a15d1aa
+    m_Address: Logic
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+    m_MainAsset: {fileID: 102900000, guid: 0011e0b7448595b489dc63b31a15d1aa, type: 3}
+    m_TargetAsset: {fileID: 102900000, guid: 0011e0b7448595b489dc63b31a15d1aa, type: 3}
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: c581a8f8e1871454a914153dc30cb76a, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 4895570ce0c34a64ba2fe5d11e0ee812, type: 2}
+    - {fileID: 11400000, guid: 7c23bfb7b9ec00e4dac6aee24c223e66, type: 2}

@@ -1,17 +1,13 @@
 {
-    "name": "BigAdventure.Runtime",
+    "name": "BigAdventure.Runtime.Common",
     "rootNamespace": "",
-    "references": [
-        "GUID:333058c7400bc1d44b2b1c79897c0487",
-        "GUID:9e24947de15b9834991c9d8411ea37cf",
-        "GUID:84651a3751eca9349aac36a66bba901b"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,
     "overrideReferences": false,
     "precompiledReferences": [],
-    "autoReferenced": true,
+    "autoReferenced": false,
     "defineConstraints": [],
     "versionDefines": [],
     "noEngineReferences": false
