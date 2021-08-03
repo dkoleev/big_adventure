@@ -1,7 +1,7 @@
 using Common;
 using UnityEngine.AddressableAssets;
 
-namespace SceneManagement.ScriptableObjects {
+namespace Runtime.SceneManagement.ScriptableObjects {
     public class GameSceneSO : DescriptionBaseSO {
         public GameSceneType sceneType;
         public AssetReference sceneReference;
