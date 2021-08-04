@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35432205b9a6a374bbbfe6b7cac92179, type: 3}
   m_Name: Walking
   m_EditorClassIdentifier: 
-  _actions: []
+  _actions:
+  - {fileID: 11400000, guid: f1ae8221523064647925a3e13b6c5a30, type: 2}
+  - {fileID: 11400000, guid: b35805ddbcb56a24eaf30dba4729ad10, type: 2}
+  - {fileID: 11400000, guid: d37e9669c93d6264785156fb176017d4, type: 2}
