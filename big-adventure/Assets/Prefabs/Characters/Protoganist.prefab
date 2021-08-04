@@ -231,6 +231,7 @@ GameObject:
   m_Component:
   - component: {fileID: 872041725686162133}
   - component: {fileID: 3860293927990349256}
+  - component: {fileID: 7531621339202563812}
   - component: {fileID: 2741842298105568214}
   m_Layer: 0
   m_Name: Protoganist
@@ -270,6 +271,24 @@ MonoBehaviour:
   speedMove: 4
   rotateRoot: {fileID: 3991152442897207939}
   speedRotate: 6
+--- !u!114 &7531621339202563812
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427345553161951489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1eeda163c70b3cb4ebb88ba92f608fd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _transitionTableSO: {fileID: 11400000, guid: fa0c0bae8a1d97d4793b7fff99f28908, type: 2}
+  _debugger:
+    debugTransitions: 1
+    appendConditionsInfo: 1
+    appendActionsInfo: 1
+    currentState: 
 --- !u!143 &2741842298105568214
 CharacterController:
   m_ObjectHideFlags: 0

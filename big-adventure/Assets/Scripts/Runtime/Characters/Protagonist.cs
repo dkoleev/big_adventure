@@ -10,6 +10,7 @@ namespace Runtime.Characters {
         [SerializeField] private Transform rotateRoot;
         [SerializeField] private float speedRotate = 5f;
 
+        public Vector3 MovementInput => _inputVector;
         private Vector2 _inputVector = Vector2.zero;
         private GameInput _gameInput;
         

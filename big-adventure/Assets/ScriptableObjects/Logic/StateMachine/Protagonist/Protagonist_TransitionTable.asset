@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 872cbaa965d1f6e4e98365d74e2060df, type: 3}
+  m_Name: Protagonist_TransitionTable
+  m_EditorClassIdentifier: 
+  _transitions:
+  - FromState: {fileID: 11400000, guid: 3605516015c3cc24ca575ce92d9b2b99, type: 2}
+    ToState: {fileID: 11400000, guid: 4976c2c4f0256424c87adfd612e25895, type: 2}
+    Conditions:
+    - ExpectedResult: 0
+      Condition: {fileID: 11400000, guid: b47400d1243d75046b56aea317aa9b4f, type: 2}
+      Operator: 0
+  - FromState: {fileID: 11400000, guid: 4976c2c4f0256424c87adfd612e25895, type: 2}
+    ToState: {fileID: 11400000, guid: 3605516015c3cc24ca575ce92d9b2b99, type: 2}
+    Conditions:
+    - ExpectedResult: 1
+      Condition: {fileID: 11400000, guid: b47400d1243d75046b56aea317aa9b4f, type: 2}
+      Operator: 0
