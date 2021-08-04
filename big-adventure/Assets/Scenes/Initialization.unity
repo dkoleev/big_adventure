@@ -167,7 +167,3 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   managersScene: {fileID: 11400000, guid: 51e3b53c96d393642b8c0ebd793fc2d9, type: 2}
-  levelLoadChannel:
-    m_AssetGUID: f6e639fe4c311f14d9a1085d9ad9eecd
-    m_SubObjectName: 
-    m_SubObjectType: 
