@@ -7,7 +7,7 @@ namespace Runtime.Characters.StateMachine.Actions.Animator {
     /// <summary>
     /// Flexible StateActionSO for the StateMachine which allows to set any parameter on the Animator, in any moment of the state (OnStateEnter, OnStateExit, or each OnUpdate).
     /// </summary>
-    [CreateAssetMenu(fileName = "AnimatorParameterAction", menuName = "State Machines/Actions/Set Animator Parameter")]
+    [CreateAssetMenu(fileName = "AnimatorParameterAction", menuName = "State Machines/Actions/Animator/Set Animator Parameter")]
     public class AnimatorParameterActionSO : StateActionSO {
         public ParameterType parameterType = default;
         public string parameterName = default;

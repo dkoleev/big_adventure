@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Walking
   m_EditorClassIdentifier: 
   _actions:
+  - {fileID: 11400000, guid: 62f8f068ae784a643b64664053e9326b, type: 2}
+  - {fileID: 11400000, guid: b61e0c38c002e8a47b6b3cbe45962c6d, type: 2}
   - {fileID: 11400000, guid: f1ae8221523064647925a3e13b6c5a30, type: 2}
   - {fileID: 11400000, guid: b35805ddbcb56a24eaf30dba4729ad10, type: 2}
   - {fileID: 11400000, guid: d37e9669c93d6264785156fb176017d4, type: 2}

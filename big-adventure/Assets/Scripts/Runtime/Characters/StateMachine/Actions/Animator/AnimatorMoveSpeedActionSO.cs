@@ -3,7 +3,7 @@ using Runtime.StateMachine.ScriptableObjects;
 using UnityEngine;
 
 namespace Runtime.Characters.StateMachine.Actions.Animator {
-    [CreateAssetMenu(fileName = "AnimatorMoveSpeedAction", menuName = "State Machines/Actions/Set Animator Move Speed")]
+    [CreateAssetMenu(fileName = "AnimatorMoveSpeedAction", menuName = "State Machines/Actions/Animator/Set Animator Move Speed")]
     public class AnimatorMoveSpeedActionSO : StateActionSO {
         public string parameterName = default;
 
