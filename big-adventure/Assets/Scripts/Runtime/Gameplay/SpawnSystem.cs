@@ -9,6 +9,8 @@ namespace Runtime.Gameplay {
         [SerializeField] private Protagonist playerPrefab;
         [Header("Scene References")]
         [SerializeField]private Transform defaultSpawnPoint;
+        
+        [SerializeField] private TransformEventChannelSO playerInstantiatedChannel = default;
 
         [Header("Scene Ready Event")]
         [SerializeField] private VoidEventChannelSO onSceneReady;
@@ -30,6 +32,7 @@ namespace Runtime.Gameplay {
 
         private void SpawnPlayer() {
             _player = InstantiatePlayer(playerPrefab, GetSpawnLocation());
+            playerInstantiatedChannel.RaiseEvent(_player.transform);
         }
 
         private Protagonist InstantiatePlayer(Protagonist prefab, Transform spawnLocation)
