@@ -13,6 +13,7 @@ namespace Runtime.SceneManagement.ScriptableObjects {
             Initialisation,
             PersistentManagers,
             Gameplay,
+            UI
         }
     }
 }

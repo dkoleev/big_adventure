@@ -152,12 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948a2181c868ac54ba2b0d6b9b4f74eb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  locationScene: {fileID: 11400000, guid: bca98a3b195b65d4b9c635fc644b844f, type: 2}
   gameplayScene: {fileID: 11400000, guid: 950d1f05bbef8a749a7d0f1bbf6fe9ac, type: 2}
-  levelLoadChannel:
-    m_AssetGUID: 
-    m_SubObjectName: 
-    m_SubObjectType: 
+  gameplayUiScene: {fileID: 11400000, guid: f319512b11d836043a91d9429e71c354, type: 2}
+  locationScene: {fileID: 11400000, guid: bca98a3b195b65d4b9c635fc644b844f, type: 2}
+  onSceneReady: {fileID: 11400000, guid: 12e812897174d9441b4af76f64fa794b, type: 2}
 --- !u!4 &1787641355
 Transform:
   m_ObjectHideFlags: 0
