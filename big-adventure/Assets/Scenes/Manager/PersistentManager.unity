@@ -155,6 +155,9 @@ MonoBehaviour:
   gameplayScene: {fileID: 11400000, guid: 950d1f05bbef8a749a7d0f1bbf6fe9ac, type: 2}
   gameplayUiScene: {fileID: 11400000, guid: f319512b11d836043a91d9429e71c354, type: 2}
   locationScene: {fileID: 11400000, guid: bca98a3b195b65d4b9c635fc644b844f, type: 2}
+  inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
+  loadLocation: {fileID: 11400000, guid: f6e639fe4c311f14d9a1085d9ad9eecd, type: 2}
+  coldStartupLocation: {fileID: 11400000, guid: eaab1ec3e06f054429bfcf92cfa4e8fd, type: 2}
   onSceneReady: {fileID: 11400000, guid: 12e812897174d9441b4af76f64fa794b, type: 2}
 --- !u!4 &1787641355
 Transform:

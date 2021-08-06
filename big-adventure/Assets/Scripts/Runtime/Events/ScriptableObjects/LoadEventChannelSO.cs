@@ -9,13 +9,13 @@ namespace Runtime.Events.ScriptableObjects {
     /// </summary>
     [CreateAssetMenu(menuName = "Events/Load Event Channel")]
     public class LoadEventChannelSO : EventChannelBaseSO {
-        public UnityAction<GameSceneSO, bool, bool> onLoadingRequested;
+        public UnityAction<GameSceneSO, bool, bool> OnLoadingRequested;
 
         public void RaiseEvent(GameSceneSO locationToLoad, bool showLoadingScreen = false, bool fadeScreen = false)
         {
-            if (onLoadingRequested != null)
+            if (OnLoadingRequested != null)
             {
-                onLoadingRequested.Invoke(locationToLoad, showLoadingScreen, fadeScreen);
+                OnLoadingRequested.Invoke(locationToLoad, showLoadingScreen, fadeScreen);
             }
             else
             {

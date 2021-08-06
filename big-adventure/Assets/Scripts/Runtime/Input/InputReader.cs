@@ -49,6 +49,11 @@ namespace Runtime.Input {
             _gameInput.Player.Disable();
             _gameInput.UI.Disable();
         }
+        
+        public void EnableAllInput() {
+            _gameInput.Player.Enable();
+            _gameInput.UI.Enable();
+        }
 
         #region Gameplay actions
 
