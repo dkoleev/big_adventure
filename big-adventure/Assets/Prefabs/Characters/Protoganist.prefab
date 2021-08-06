@@ -78,9 +78,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
-  speedMove: 5
   rotateRoot: {fileID: 3991152442897207939}
-  speedRotate: 10
   baseAnimator: {fileID: 4284232754795646466}
 --- !u!114 &7531621339202563812
 MonoBehaviour:
@@ -191,6 +189,22 @@ PrefabInstance:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 137382746745358466, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
+      propertyPath: m_DynamicOccludee
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137382746745358466, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
+      propertyPath: m_LightProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137382746745358466, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
+      propertyPath: m_ReflectionProbeUsage
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 137382746745358466, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: b729af9f10f859940889fa09b299901b, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af169be12f376ce46a3e6b4bee8b8ffe, type: 3}
 --- !u!4 &4191050125783015178 stripped
