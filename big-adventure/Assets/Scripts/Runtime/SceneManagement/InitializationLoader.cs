@@ -9,6 +9,8 @@ namespace Runtime.SceneManagement {
         [SerializeField] private GameSceneSO locationScene;
 
         private void Start() {
+            Application.targetFrameRate = 60;
+            
             managersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive).Completed += handle => {
                 var sceneLoader = handle.Result.Scene.GetRootGameObjects().First(go => go.GetComponent<SceneLoader>() != null);
                 sceneLoader.GetComponent<SceneLoader>().LoadLocation(locationScene, false, false);
