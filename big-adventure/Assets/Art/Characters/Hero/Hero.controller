@@ -863,7 +863,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 467b6c0b90f803f48b60a205728f9342, type: 3}
+  m_Motion: {fileID: 7400000, guid: bbf1cc6305ddeb64e8b651616f82ecdc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -925,7 +925,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PigChef
+  m_Name: Hero
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: IsWalking
@@ -1582,7 +1582,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: -203655887218126122, guid: 467b6c0b90f803f48b60a205728f9342, type: 3}
+  m_Motion: {fileID: 7400000, guid: bbf1cc6305ddeb64e8b651616f82ecdc, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -2007,7 +2007,7 @@ BlendTree:
   m_Name: Blend Tree
   m_Childs:
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2ed633f741c0b0e47b05f993d698dbf1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 461b722987aaa8e4191d7ccaeec15600, type: 2}
     m_Threshold: 0
     m_Position: {x: 0, y: 0}
     m_TimeScale: 0.5
@@ -2015,7 +2015,7 @@ BlendTree:
     m_DirectBlendParameter: MovingSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2ed633f741c0b0e47b05f993d698dbf1, type: 2}
+    m_Motion: {fileID: 7400000, guid: 461b722987aaa8e4191d7ccaeec15600, type: 2}
     m_Threshold: 0.5
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.2
@@ -2023,7 +2023,7 @@ BlendTree:
     m_DirectBlendParameter: MovingSpeed
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: f26a2dc3f6e948a4d8dd0cae7791fc88, type: 2}
+    m_Motion: {fileID: 7400000, guid: a5bda81122538a244ad8ce773cb98d64, type: 2}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1.2
