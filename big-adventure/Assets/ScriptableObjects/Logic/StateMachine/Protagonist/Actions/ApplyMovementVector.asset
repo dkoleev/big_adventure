@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 130c08f0351f463ba99d844d495c16cb, type: 3}
   m_Name: ApplyMovementVector
   m_EditorClassIdentifier: 
-  speedMove: 4
+  speedMove: 3
