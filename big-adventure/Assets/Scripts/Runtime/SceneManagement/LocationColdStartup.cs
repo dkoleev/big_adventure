@@ -15,9 +15,11 @@ namespace Runtime.SceneManagement {
         private bool _isColdStart = false;
 
         private void Awake() {
+#if UNITY_EDITOR
             if (!SceneManager.GetSceneByName(persistentManagersSO.sceneReference.editorAsset.name).isLoaded) {
                 _isColdStart = true;
             }
+#endif
         }
 
         private void Start() {

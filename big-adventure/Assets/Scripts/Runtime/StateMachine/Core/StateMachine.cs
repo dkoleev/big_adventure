@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+#if UNITY_EDITOR
 using Runtime.StateMachine.Debugging;
+#endif
 using Runtime.StateMachine.ScriptableObjects;
 using UnityEngine;
 

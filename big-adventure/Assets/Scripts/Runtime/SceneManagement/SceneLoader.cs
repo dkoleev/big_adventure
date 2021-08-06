@@ -46,7 +46,24 @@ namespace Runtime.SceneManagement {
 #endif
         }
         
-                
+        public void LoadLocation(GameSceneSO locationToLoad, bool showLoadingScreen, bool fadeScreen) {
+            if (_isLoading)
+                return;
+
+            _sceneToLoad = locationToLoad;
+            _isLoading = true;
+
+            if (!_gameplayManagerSceneInstance.Scene.isLoaded) {
+                LoadGameplayScene(() => {
+                    LoadGameplayUiScene(() => {
+                        LoadLocationScene();
+                    });
+                });
+            } else {
+                LoadLocationScene();
+            }
+        }
+        
         private void ColdStartupLocation(GameSceneSO locationToLoad, bool showLoadingScreen, bool fadeScreen) {
             _currentlyLoadedScene = locationToLoad;
 
@@ -67,25 +84,7 @@ namespace Runtime.SceneManagement {
 #endif
             }
         }
-
-        private void LoadLocation(GameSceneSO locationToLoad, bool showLoadingScreen, bool fadeScreen) {
-            if (_isLoading)
-                return;
-
-            _sceneToLoad = locationToLoad;
-            _isLoading = true;
-
-            if (!_gameplayManagerSceneInstance.Scene.isLoaded) {
-                LoadGameplayScene(() => {
-                    LoadGameplayUiScene(() => {
-                        LoadLocationScene();
-                    });
-                });
-            } else {
-                LoadLocationScene();
-            }
-        }
-
+        
         private void LoadGameplayScene(Action onLoaded = null) {
             _gameplayManagerLoadingOpHandle = gameplayScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive, true);
             _gameplayManagerLoadingOpHandle.Completed += operationHandle => {
