@@ -22,9 +22,9 @@ namespace Runtime.Characters.StateMachine.Actions {
         }
 
         public override void OnUpdate() {
-            var speedModifier = Mathf.Clamp01(_protagonistScript.MovementInput.magnitude);
             var vector = new Vector3(_protagonistScript.MovementInput.x, 0, _protagonistScript.MovementInput.y);
-            var speed = vector * _originSO.speedMove * speedModifier * Time.deltaTime;
+            var speed = vector * _originSO.speedMove * Time.deltaTime;
+
             _characterController.Move(speed);
         }
     }

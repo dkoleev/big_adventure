@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: AnimatorMoveSpeed_Action
   m_EditorClassIdentifier: 
   parameterName: MovingSpeed
+  minSpeedMove: 0.3

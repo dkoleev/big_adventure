@@ -16,8 +16,8 @@ namespace Runtime.Characters.StateMachine.Actions.Animator {
         private UnityEngine.Animator _animator;
         private Protagonist _protagonist;
 
-        private AnimatorParameterActionSO _originSO =>
-            (AnimatorParameterActionSO) base.OriginSO; // The SO this StateAction spawned from
+        private AnimatorMoveSpeedActionSO _originSO =>
+            (AnimatorMoveSpeedActionSO) base.OriginSO; // The SO this StateAction spawned from
 
         private int _parameterHash;
 
