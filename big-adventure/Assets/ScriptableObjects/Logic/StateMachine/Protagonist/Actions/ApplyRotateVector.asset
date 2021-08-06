@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a573ea8a381f4a78958c591c47f572bc, type: 3}
   m_Name: ApplyRotateVector
   m_EditorClassIdentifier: 
-  speedRotate: 6
+  speedRotate: 20

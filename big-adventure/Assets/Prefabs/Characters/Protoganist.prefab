@@ -78,9 +78,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
-  speedMove: 4
+  speedMove: 5
   rotateRoot: {fileID: 3991152442897207939}
-  speedRotate: 6
+  speedRotate: 10
   baseAnimator: {fileID: 4284232754795646466}
 --- !u!114 &7531621339202563812
 MonoBehaviour:

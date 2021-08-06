@@ -4,9 +4,7 @@ using UnityEngine;
 namespace Runtime.Characters {
     public class Protagonist : MonoBehaviour {
         [SerializeField] private InputReader inputReader = default;
-        [SerializeField] private float speedMove = 3f;
         [SerializeField] private Transform rotateRoot;
-        [SerializeField] private float speedRotate = 5f;
         [SerializeField] private Animator baseAnimator;
 
         public Vector3 MovementInput => _inputVector;
