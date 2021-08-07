@@ -11,7 +11,9 @@ namespace Runtime.SceneManagement {
         private void Start() {
             managersScene.sceneReference.LoadSceneAsync(LoadSceneMode.Additive).Completed += handle => {
                 var sceneLoader = handle.Result.Scene.GetRootGameObjects().First(go => go.GetComponent<SceneLoader>() != null);
-                sceneLoader.GetComponent<SceneLoader>().LoadLocation(locationScene, false, false);
+                var loader = sceneLoader.GetComponent<SceneLoader>();
+                loader.LoadLocation(locationScene, false, false);
+                loader.RiseLoadLocationEvent(locationScene);
                 SceneManager.UnloadSceneAsync(0);
             };
         }

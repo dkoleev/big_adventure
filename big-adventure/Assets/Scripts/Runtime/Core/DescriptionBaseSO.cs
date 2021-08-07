@@ -1,7 +1,7 @@
 using UnityEngine;
 
-namespace Common {
-    public class DescriptionBaseSO : ScriptableObject {
+namespace Runtime.Core {
+    public class DescriptionBaseSO : SerializableScriptableObject {
         [TextArea] [SerializeField] 
         private string description;       
     }

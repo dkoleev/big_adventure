@@ -7,5 +7,17 @@ namespace Runtime.DebugTools {
             Debug.Log(value);
 #endif
         }
+        
+        public static void LogWarning(string value) {
+#if DEBUG
+            Debug.LogWarning(value);
+#endif
+        }
+        
+        public static void LogError(string value) {
+#if DEBUG
+            Debug.LogError(value);
+#endif
+        }
     }
 }

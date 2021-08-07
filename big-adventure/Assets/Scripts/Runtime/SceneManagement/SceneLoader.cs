@@ -45,7 +45,11 @@ namespace Runtime.SceneManagement {
             coldStartupLocation.OnLoadingRequested -= ColdStartupLocation;
 #endif
         }
-        
+
+        public void RiseLoadLocationEvent(GameSceneSO locationToLoad) {
+            loadLocation.RaiseEvent(locationToLoad);
+        }
+
         public void LoadLocation(GameSceneSO locationToLoad, bool showLoadingScreen, bool fadeScreen) {
             if (_isLoading)
                 return;
