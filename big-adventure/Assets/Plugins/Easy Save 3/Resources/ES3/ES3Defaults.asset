@@ -38,6 +38,7 @@ MonoBehaviour:
     - Purchasing.Common
     - Assembly-CSharp
     - BigAdventure.Runtime.Core
+    - DOTween.Modules
     - LunarConsoleEditor
     - UOP1.StateMachine.Editor
     - Tayx.Graphy.Editor

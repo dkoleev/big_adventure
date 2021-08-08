@@ -13,6 +13,22 @@ MonoBehaviour:
   m_Name: Apple
   m_EditorClassIdentifier: 
   _guid: af50996307f78534abc8d3f55c3ba1c8
-  _previewImage: {fileID: 0}
-  _itemType: {fileID: 11400000, guid: 290d7cf19e2d74f48a8fd11a33428ca8, type: 2}
-  _prefab: {fileID: 478615322208785708, guid: bbb39635e9e1e854f9ad9126e75f4a6a, type: 3}
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:e4244dc9baf487d4cbef06099b65ccd1
+    m_TableEntryReference:
+      m_KeyId: 24437739520
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 1
+  description:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 1
+  previewImage: {fileID: 0}
+  itemType: {fileID: 11400000, guid: 290d7cf19e2d74f48a8fd11a33428ca8, type: 2}
+  prefab: {fileID: 478615322208785708, guid: bbb39635e9e1e854f9ad9126e75f4a6a, type: 3}
