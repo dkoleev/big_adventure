@@ -41,6 +41,7 @@ GameObject:
   m_Component:
   - component: {fileID: 872041725686162133}
   - component: {fileID: 3860293927990349256}
+  - component: {fileID: 3628094627975385515}
   - component: {fileID: 7531621339202563812}
   - component: {fileID: 2741842298105568214}
   m_Layer: 0
@@ -80,6 +81,19 @@ MonoBehaviour:
   inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
   rotateRoot: {fileID: 3991152442897207939}
   baseAnimator: {fileID: 4284232754795646466}
+--- !u!114 &3628094627975385515
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427345553161951489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 910330342abc48bda9a3550a6c27ac2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _currentInventory: {fileID: 11400000, guid: 8b0eb0284b6b67c44b6246b6933ecab7, type: 2}
 --- !u!114 &7531621339202563812
 MonoBehaviour:
   m_ObjectHideFlags: 0
