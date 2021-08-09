@@ -1,3 +1,5 @@
+using System;
+using Runtime.Events.ScriptableObjects;
 using Runtime.InventorySystem.ScriptableObjects;
 using UnityEngine;
 
@@ -5,6 +7,16 @@ namespace Runtime.InventorySystem {
     public class Inventory : MonoBehaviour {
         [SerializeField]
         private InventorySO _currentInventory = default;
+        
+        [SerializeField] private ItemEventChannelSO addItemEvent = default;
+
+        private void OnEnable() {
+            addItemEvent.OnEventRaised += AddItem;
+        }
+        
+        private void OnDisable() {
+            addItemEvent.OnEventRaised -= AddItem;
+        }
 
         private void AddItem(ItemSO item) {
             _currentInventory.Add(item);

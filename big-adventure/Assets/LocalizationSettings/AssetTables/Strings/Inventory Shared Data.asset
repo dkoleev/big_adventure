@@ -19,6 +19,10 @@ MonoBehaviour:
     m_Key: apple
     m_Metadata:
       m_Items: []
+  - m_Id: 508406663892992
+    m_Key: berry
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

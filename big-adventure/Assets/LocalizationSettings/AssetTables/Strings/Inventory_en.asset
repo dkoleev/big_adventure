@@ -22,5 +22,9 @@ MonoBehaviour:
     m_Localized: Apple
     m_Metadata:
       m_Items: []
+  - m_Id: 508406663892992
+    m_Localized: Berry
+    m_Metadata:
+      m_Items: []
   references:
     version: 1

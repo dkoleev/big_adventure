@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _typeColor: {r: 0.32433826, g: 0.6415094, b: 0.2269491, a: 1}
   _type: 4
-  _actionType: 0
+  _actionType: 1
   _tabType: {fileID: 11400000, guid: e0bc7bcbaae55a448a222cf2b4885452, type: 2}

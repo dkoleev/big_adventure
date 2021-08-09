@@ -6,30 +6,30 @@ namespace Runtime.InventorySystem {
     [Serializable]
     public class ItemStack {
         [SerializeField]
-        private ItemSO _item;
-
-        public ItemSO Item => _item;
+        private ItemSO item;
+        [SerializeField]
+        private int amount;
+        
+        public ItemSO Item => item;
 
         public int Amount {
-            get => _amount;
-            set => _amount = value;
+            get => amount;
+            set => amount = value;
         }
 
-        private int _amount;
-
         public ItemStack() {
-            _item = null;
-            _amount = 0;
+            item = null;
+            amount = 0;
         }
 
         public ItemStack(ItemStack itemStack) {
-            _item = itemStack.Item;
-            _amount = itemStack._amount;
+            item = itemStack.Item;
+            amount = itemStack.amount;
         }
 
         public ItemStack(ItemSO item, int amount) {
-            _item = item;
-            _amount = amount;
+            this.item = item;
+            this.amount = amount;
         }
     }
 }
