@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using Runtime.DebugTools;
 using Runtime.Events.ScriptableObjects;
 using Runtime.Input;
@@ -44,10 +45,6 @@ namespace Runtime.SceneManagement {
 #if UNITY_EDITOR
             coldStartupLocation.OnLoadingRequested -= ColdStartupLocation;
 #endif
-        }
-
-        public void RiseLoadLocationEvent(GameSceneSO locationToLoad) {
-            loadLocation.RaiseEvent(locationToLoad);
         }
 
         public void LoadLocation(GameSceneSO locationToLoad, bool showLoadingScreen, bool fadeScreen) {

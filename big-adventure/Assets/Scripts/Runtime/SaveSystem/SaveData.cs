@@ -1,10 +1,12 @@
 using System;
+using System.Collections.Generic;
 using UnityEngine;
 
 namespace Runtime.SaveSystem {
     [Serializable]
     public class SaveData {
         public string locationId;
+        public List<SerializedItemStack> itemStacks = new List<SerializedItemStack>();
         
         public string ToJson()
         {

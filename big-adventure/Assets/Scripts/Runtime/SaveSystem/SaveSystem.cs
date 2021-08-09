@@ -1,17 +1,25 @@
+using System.Collections;
 using Runtime.Core;
 using Runtime.Events.ScriptableObjects;
+using Runtime.InventorySystem.ScriptableObjects;
 using Runtime.SceneManagement.ScriptableObjects;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
+using UnityEngine.ResourceManagement.AsyncOperations;
 
 namespace Runtime.SaveSystem {
     public class SaveSystem : MonoBehaviourSingleton<SaveSystem> {
+        [SerializeField] private InventorySO playerInventory = default;
+        
         [SerializeField]
         private LoadEventChannelSO loadLocationEvent;
 
-        private string saveFilename = "save.biga";
-        private string backupSaveFilename = "save.biga.bak";
+        private static readonly string saveFilename = "save.biga";
+        private static readonly string backupSaveFilename = "save.biga.bak";
 
-        private SaveData _saveData = new SaveData();
+        public SaveData SaveData => _saveData;
+
+        private readonly SaveData _saveData = new SaveData();
 
         private void OnApplicationPause(bool pauseStatus) {
             if (pauseStatus) {
@@ -42,7 +50,7 @@ namespace Runtime.SaveSystem {
             }
         }
 
-        public bool LoadProgress() {
+        private bool LoadSavedFile() {
             if (FileManager.LoadFromFile(saveFilename, out var json)) {
                 _saveData.LoadFromJson(json);
                 return true;
@@ -51,7 +59,12 @@ namespace Runtime.SaveSystem {
             return false;
         }
 
-        public void SaveProgress() {
+        private void SaveProgress() {
+            _saveData.itemStacks.Clear();
+            foreach (var itemStack in playerInventory.Items) {
+                _saveData.itemStacks.Add(new SerializedItemStack(itemStack.Item.Guid, itemStack.Amount));
+            }
+
             if (FileManager.IsFileExists(saveFilename)) {
                 if (FileManager.MoveFile(saveFilename, backupSaveFilename)) {
                     if (FileManager.WriteToFile(saveFilename, _saveData.ToJson())) {
@@ -65,7 +78,22 @@ namespace Runtime.SaveSystem {
             }
         }
 
-        public void ClearProgress() {
+        public IEnumerator LoadSavedGame() {
+            LoadSavedFile();
+            
+            playerInventory.Items.Clear();
+            foreach (var serializedItemStack in _saveData.itemStacks) {
+                var loadItemOperationHandle = Addressables.LoadAssetAsync<ItemSO>(serializedItemStack.ItemGuid);
+                yield return loadItemOperationHandle;
+                
+                if (loadItemOperationHandle.Status == AsyncOperationStatus.Succeeded) {
+                    var itemSO = loadItemOperationHandle.Result;
+                    playerInventory.Add(itemSO, serializedItemStack.Amount);
+                }
+            }
+        }
+
+        public static void ClearProgress() {
             FileManager.WriteToFile(saveFilename, "");
         }
     }
