@@ -10,6 +10,7 @@ namespace Runtime.Input {
 
         // Gameplay
         public event UnityAction<Vector2> MoveEvent = delegate { };
+        public event UnityAction InteractEvent = delegate { };
         public event UnityAction ClickEvent = delegate { };
         
         private GameInput _gameInput;
@@ -65,6 +66,12 @@ namespace Runtime.Input {
         }
 
         public void OnFire(InputAction.CallbackContext context) {
+        }
+
+        public void OnInteract(InputAction.CallbackContext context) {
+            if (context.phase == InputActionPhase.Performed) {
+                InteractEvent.Invoke();
+            }
         }
 
         #endregion

@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 3860293927990349256}
   - component: {fileID: 3628094627975385515}
   - component: {fileID: 7531621339202563812}
+  - component: {fileID: 5024967136623540370}
   - component: {fileID: 2741842298105568214}
   m_Layer: 0
   m_Name: Protoganist
@@ -112,6 +113,19 @@ MonoBehaviour:
     appendConditionsInfo: 1
     appendActionsInfo: 1
     currentState: 
+--- !u!114 &5024967136623540370
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7427345553161951489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4607873e8e1843389ec047705b99a8c6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
 --- !u!143 &2741842298105568214
 CharacterController:
   m_ObjectHideFlags: 0
