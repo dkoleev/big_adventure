@@ -7,7 +7,13 @@ namespace Runtime.Interaction {
         [SerializeField] private ItemSO currentItem = default;
         [SerializeField] private EmptyEventUnity onInteractEvent;
 
+        public bool CanInteract => _canInteract;
+
+        private bool _canInteract = true;
+
         public ItemSO Interact() {
+            _canInteract = false;
+            
             onInteractEvent?.Invoke(gameObject);
             
             return currentItem;

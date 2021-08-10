@@ -21,8 +21,10 @@ MonoBehaviour:
     m_Address: Characters
     m_ReadOnly: 0
     m_SerializedLabels: []
-    m_MainAsset: {fileID: 102900000, guid: 51a154a3a92e1c449a429a27056746e5, type: 3}
-    m_TargetAsset: {fileID: 102900000, guid: 51a154a3a92e1c449a429a27056746e5, type: 3}
+  - m_GUID: eb083e2c4974f5a4486ddc4558658882
+    m_Address: FX
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: c581a8f8e1871454a914153dc30cb76a, type: 2}
   m_SchemaSet:

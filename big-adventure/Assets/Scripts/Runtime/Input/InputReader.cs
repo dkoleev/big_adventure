@@ -12,6 +12,8 @@ namespace Runtime.Input {
         public event UnityAction<Vector2> MoveEvent = delegate { };
         public event UnityAction InteractEvent = delegate { };
         public event UnityAction ClickEvent = delegate { };
+
+        public GameInput GameInput => _gameInput;
         
         private GameInput _gameInput;
 

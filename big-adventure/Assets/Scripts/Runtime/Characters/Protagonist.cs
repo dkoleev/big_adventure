@@ -14,11 +14,6 @@ namespace Runtime.Characters {
         private Vector2 _inputVector = Vector2.zero;
         private GameInput _gameInput;
         
-        private void Start() {
-            _gameInput = new GameInput();
-            _gameInput.Player.Enable();
-        }
-
         private void OnEnable() {
             inputReader.MoveEvent += OnMove;
         }

@@ -2,16 +2,18 @@ using System.Collections.Generic;
 using JetBrains.Annotations;
 using Runtime.Events.ScriptableObjects;
 using Runtime.Input;
-using Runtime.InventorySystem;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 
 namespace Runtime.Interaction {
     public class InteractionManager : MonoBehaviour {
         [SerializeField] private InputReader inputReader;
+        [SerializeField] private AssetReference highlightAsset;
         [Header("Broadcasting on")]
         [SerializeField] private ItemEventChannelSO onObjectPickUp = default;
 
-        private LinkedList<Interaction> _potentialInteractions = new LinkedList<Interaction>();
+        private readonly LinkedList<Interaction> _potentialInteractions = new LinkedList<Interaction>();
+        private SelectedHighlight _highlight;
 
         public enum InteractionType {
             None = 0,
@@ -20,12 +22,24 @@ namespace Runtime.Interaction {
             Talk
         };
 
-        private void OnEnable() {
-            inputReader.InteractEvent += Interact;
+        private void Start() {
+            highlightAsset.LoadAssetAsync<GameObject>().Completed += handle => {
+                _highlight = Instantiate(handle.Result).GetComponent<SelectedHighlight>();
+            };
         }
 
+        private void OnEnable() {
+            inputReader.MoveEvent += OnPlayerMove;
+            inputReader.InteractEvent += Interact;
+        }
+        
         private void OnDisable() {
+            inputReader.MoveEvent -= OnPlayerMove;
             inputReader.InteractEvent -= Interact;
+        }
+        
+        private void OnPlayerMove(Vector2 arg0) {
+            UpdateHighlight();
         }
 
         //Called by the Event on the trigger collider on the child GO called "InteractionDetector"
@@ -36,13 +50,20 @@ namespace Runtime.Interaction {
                 return;
             }
 
-            if (entered)
+            if (entered) {
                 AddPotentialInteraction(interactable);
-            else
+            } else {
                 RemovePotentialInteraction(interactable);
+            }
+
+            UpdateHighlight();
         }
 
         private void AddPotentialInteraction(InteractableObject obj) {
+            if (!obj.CanInteract) {
+                return;
+            }
+            
             var newPotentialInteraction = new Interaction(InteractionType.PickUp, obj);
             _potentialInteractions.AddFirst(newPotentialInteraction);
         }
@@ -59,6 +80,20 @@ namespace Runtime.Interaction {
             }
         }
 
+        private void UpdateHighlight() {
+            if (_highlight is null) {
+                return;
+            }
+
+            _highlight.SetActive(_potentialInteractions.Count != 0);
+            if (_potentialInteractions.Count == 0) {
+                return;
+            }
+
+            var target = _potentialInteractions.First.Value.InteractableObject;
+            _highlight.SetPosition(target.transform.position);
+        }
+
         private void Interact() {
             if (_potentialInteractions.Count == 0)
                 return;
@@ -67,6 +102,8 @@ namespace Runtime.Interaction {
             _potentialInteractions.RemoveFirst();
             var currentItem = itemObject.Interact();
             onObjectPickUp.RaiseEvent(currentItem);
+
+            UpdateHighlight();
         }
     }
 }

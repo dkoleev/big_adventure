@@ -220,6 +220,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   inputReader: {fileID: 11400000, guid: cdac34950edf36b469e91cc32dfa6a65, type: 2}
+  highlightAsset:
+    m_AssetGUID: 8665339d0049f3c499536d509be57c59
+    m_SubObjectName: 
+    m_SubObjectType: 
+    m_EditorAssetChanged: 0
   onObjectPickUp: {fileID: 11400000, guid: a940e140a98cc844ab558c552bf18efd, type: 2}
 --- !u!143 &2741842298105568214
 CharacterController:
