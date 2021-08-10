@@ -3,10 +3,10 @@ using UnityEngine;
 namespace Runtime.InventorySystem.ScriptableObjects {
     public enum ItemInventoryType {
         Recipe,
-        Utensil,
         Ingredient,
         Customisation,
-        Dish,
+        Food,
+        Weapon
     }
 
     public enum ItemInventoryActionType {

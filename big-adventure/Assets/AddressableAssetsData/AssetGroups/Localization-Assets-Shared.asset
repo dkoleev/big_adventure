@@ -21,6 +21,10 @@ MonoBehaviour:
     m_Address: Assets/LocalizationSettings/AssetTables/Strings/Inventory Shared Data.asset
     m_ReadOnly: 1
     m_SerializedLabels: []
+  - m_GUID: 686a6138dfa45fc48a55de88066857ba
+    m_Address: Assets/LocalizationSettings/AssetTables/Strings/Weapons Shared Data.asset
+    m_ReadOnly: 1
+    m_SerializedLabels: []
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c581a8f8e1871454a914153dc30cb76a, type: 2}
   m_SchemaSet:

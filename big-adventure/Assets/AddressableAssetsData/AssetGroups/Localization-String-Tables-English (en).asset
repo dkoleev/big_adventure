@@ -22,6 +22,11 @@ MonoBehaviour:
     m_ReadOnly: 1
     m_SerializedLabels:
     - Locale-en
+  - m_GUID: 44facc3362ca75f43adc8f53bbd88c1d
+    m_Address: Weapons_en
+    m_ReadOnly: 1
+    m_SerializedLabels:
+    - Locale-en
   m_ReadOnly: 1
   m_Settings: {fileID: 11400000, guid: c581a8f8e1871454a914153dc30cb76a, type: 2}
   m_SchemaSet:

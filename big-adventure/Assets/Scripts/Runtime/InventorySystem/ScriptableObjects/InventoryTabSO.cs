@@ -5,7 +5,8 @@ namespace Runtime.InventorySystem.ScriptableObjects {
     {
         Customization,
         CookingItem,
-        Recipe
+        Recipe,
+        Weapons
     }
     
     [CreateAssetMenu(fileName = "InventoryTabType", menuName = "Inventory/Inventory Tab Type")]

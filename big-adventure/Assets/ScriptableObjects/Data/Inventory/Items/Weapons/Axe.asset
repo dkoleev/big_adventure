@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 634c903a43c04c3cb580485933af5bd8, type: 3}
+  m_Name: Axe
+  m_EditorClassIdentifier: 
+  _guid: a2504c3a63c1bc7488ec948ecd491d5b
+  itemName:
+    m_TableReference:
+      m_TableCollectionName: GUID:686a6138dfa45fc48a55de88066857ba
+    m_TableEntryReference:
+      m_KeyId: 44859805696
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 1
+  description:
+    m_TableReference:
+      m_TableCollectionName: 
+    m_TableEntryReference:
+      m_KeyId: 0
+      m_Key: 
+    m_FallbackState: 0
+    m_WaitForCompletion: 1
+  previewImage: {fileID: 0}
+  itemType: {fileID: 0}
+  prefab: {fileID: 7119992567446695542, guid: 631401c9327a3044bbbfc7abf4d81ca9, type: 3}
+  damage: 10
