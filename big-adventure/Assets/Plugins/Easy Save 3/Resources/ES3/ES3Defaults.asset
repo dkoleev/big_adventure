@@ -39,10 +39,12 @@ MonoBehaviour:
     - Assembly-CSharp
     - BigAdventure.Runtime.Core
     - DOTween.Modules
+    - Sirenix.OdinInspector.CompatibilityLayer
     - LunarConsoleEditor
     - UOP1.StateMachine.Editor
     - Tayx.Graphy.Editor
     - BigAdventure.Editor
+    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     showAdvancedSettings: 1
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1

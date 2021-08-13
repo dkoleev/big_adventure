@@ -9,11 +9,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d9e5937dc6d94b3b9b48a501427bee7e, type: 3}
-  m_Name: BushReward
+  m_Script: {fileID: 1137305049, guid: a4865f1ab4504ed8a368670db22f409c, type: 3}
+  m_Name: InspectorConfig
   m_EditorClassIdentifier: 
-  dropGroups:
-  - drops:
-    - item: {fileID: 11400000, guid: bbfabc21feaec544c86c5ae699d6f120, type: 2}
-      itemDropRate: 0
-    dropRate: 0
+  enableOdinInInspector: 1
+  defaultEditorBehaviour: 11
+  processMouseMoveInInspector: 1
+  drawingConfig:
+    configs: []
