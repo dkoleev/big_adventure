@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4725046ac04142dda5864f9def337549, type: 3}
-  m_Name: Bush_Berry
+  m_Name: Berry
   m_EditorClassIdentifier: 
   _guid: bbfabc21feaec544c86c5ae699d6f120
   itemName:
