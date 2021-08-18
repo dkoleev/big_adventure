@@ -29,22 +29,23 @@ MonoBehaviour:
     referenceMode: 2
     serializationDepthLimit: 64
     assemblyNames:
-    - Assembly-CSharp-firstpass
     - BigAdventure.Runtime
+    - Assembly-CSharp-firstpass
     - LunarConsole
+    - Assembly-CSharp
     - Cinemachine
     - Tayx.Graphy
     - UOP1.StateMachine
     - Purchasing.Common
-    - Assembly-CSharp
+    - Sirenix.OdinInspector.CompatibilityLayer
     - BigAdventure.Runtime.Core
     - DOTween.Modules
-    - Sirenix.OdinInspector.CompatibilityLayer
+    - Sirenix.OdinInspector.CompatibilityLayer.Editor
     - LunarConsoleEditor
     - UOP1.StateMachine.Editor
     - Tayx.Graphy.Editor
     - BigAdventure.Editor
-    - Sirenix.OdinInspector.CompatibilityLayer.Editor
+    - Sirenix.OdinInspector.Modules.UnityMathematics
     showAdvancedSettings: 1
   addMgrToSceneAutomatically: 0
   autoUpdateReferences: 1
